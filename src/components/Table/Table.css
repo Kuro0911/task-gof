@@ -1,0 +1,16 @@
+table{
+    width: 100%;
+    color: #ffe7a3;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+tr{
+    border: 1px solid #dca54c;
+    padding: 2em;
+    background-color: #f4cf6b5b;
+}
+td{
+    border: 1px solid #dca54c;
+    padding: 2em;
+}

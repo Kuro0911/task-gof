@@ -1,38 +1,89 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #dca54c;
+}
+.App > h1{
+  text-transform: capitalize;
+}
+
+.json-input-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 2.5%;
+  border-radius: 20px;
+  height: 50vh;
+}
+.json-input-container{
+  height: 90%;
+  width: 100%;
+}
+.json-input{
+  height: 80%;
+  width: 95%;
+  color: #ffe7a3;
+  font-size: large;
+  background-color: #331800;
+  padding: 1em;
+  border-radius: 10px;
+  resize: none;
+}
+.json-submit {
+  height: 10%;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* CSS */
+.json-submit-button {
+  align-items: center;
+  background-color: #332818;
+  border: 1px solid #ffe7a3;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #dca54c;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.json-submit-button:active,
+.json-submit-button:hover {
+  outline: 0;
+}
+
+.json-submit-button:hover {
+  background-color: #0f0700;
+  color: #ffe7a3;
+  border-color: #332818;
+}
+
+@media (min-width: 768px) {
+  .json-submit-button {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.json-out{
+  width: 80%;
+  margin-top: 2em;
 }
