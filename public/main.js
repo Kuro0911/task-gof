@@ -3,8 +3,8 @@ const path = require("path");
 
 let mainWindow;
 const isMac = process.platform === "darwin";
-const isDev = process.env.NODE_ENV !== "development";
-
+let isDev = process.env.NODE_ENV !== "development";
+isDev = false;
 app.commandLine.appendSwitch("ignore-certificate-errors");
 app.commandLine.appendSwitch("allow-insecure-localhost", "true");
 
